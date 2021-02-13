@@ -3,6 +3,8 @@
 ################################################################################
 Code/DBAccess/DBAccess/DBAccessProj/obj/Debug/DBAccessProj.csprojAssemblyReference.cache
 Code/DBAccess/DBAccess/.vs/DBAccess/v16/.suo
+Code/DBAccess/DBAccess/DBAccessProj/bin/*
+Code/DBAccess/DBAccess/DBAccessProj/obj/*
 /.vs/SQL_injection_practice/v16/TestStore/0/000.testlog
 /.vs/SQL_injection_practice/v16/TestStore/0/testlog.manifest
 .vs/slnx.sqlite
