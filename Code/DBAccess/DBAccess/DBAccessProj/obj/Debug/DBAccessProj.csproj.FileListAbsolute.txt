@@ -1,0 +1,6 @@
+C:\Users\shawn\source\repos\SQL_injection_practice\Code\DBAccess\DBAccess\DBAccessProj\bin\Debug\DBAccessProj.exe.config
+C:\Users\shawn\source\repos\SQL_injection_practice\Code\DBAccess\DBAccess\DBAccessProj\bin\Debug\DBAccessProj.exe
+C:\Users\shawn\source\repos\SQL_injection_practice\Code\DBAccess\DBAccess\DBAccessProj\bin\Debug\DBAccessProj.pdb
+C:\Users\shawn\source\repos\SQL_injection_practice\Code\DBAccess\DBAccess\DBAccessProj\obj\Debug\DBAccessProj.csproj.CoreCompileInputs.cache
+C:\Users\shawn\source\repos\SQL_injection_practice\Code\DBAccess\DBAccess\DBAccessProj\obj\Debug\DBAccessProj.exe
+C:\Users\shawn\source\repos\SQL_injection_practice\Code\DBAccess\DBAccess\DBAccessProj\obj\Debug\DBAccessProj.pdb
