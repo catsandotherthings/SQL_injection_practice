@@ -18,36 +18,43 @@ namespace DBAccessProj
                 string str = "Data Source = thermaltakepc; Initial Catalog = Rosie; Integrated Security = True";
                 conn.ConnectionString = str; 
                 SqlCommand cmd = new SqlCommand();
-                SqlDataReader r;
-
-                Console.Write("Name: ");
-                string thename = Console.ReadLine();
-
-                cmd.CommandText = "SELECT * FROM  People WHERE CONVERT(VARCHAR, Name) = '" + thename + "' ;"; 
-                
 
                 cmd.Connection = conn;
+                conn.Open();             
 
-                conn.Open();
-
-                using (SqlDataReader reader = cmd.ExecuteReader())
+                while (true)
                 {
-                    // while there is another record present
-                    while (reader.Read())
-                    {
-                        // write the data on to the screen
-                        Console.WriteLine(String.Format("{0} \t | {1} \t",
-                        // call the objects from their index
-                        reader[0], reader[1]));
+                    Console.Write("Name [or 'exit']: ");
+                    string thename = Console.ReadLine();
+                    if (thename.Equals("exit")) break;
+
+                    try {
+
+                        cmd.CommandText = "SELECT * FROM  People WHERE CONVERT(VARCHAR, Name) = '" + thename + "' ;";
+                        Console.WriteLine(cmd.CommandText);
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            // while there is another record present
+                            while (reader.Read())
+                            {
+                                // write the data on to the screen
+                                Console.WriteLine(String.Format("{0} \t\t\t |\t\t {1}", reader[0], reader[1]));
+                            }
+                        }
                     }
+
+                    catch (Exception e)
+                    {
+                        Console.WriteLine(e.Message); 
+                    }
+
+                    
                 }
-
-
 
                 conn.Close();
             }
 
-            Console.ReadLine(); 
+            Console.WriteLine("Goodbye."); 
         }
     }
 }

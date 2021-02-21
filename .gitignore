@@ -8,3 +8,6 @@ Code/DBAccess/DBAccess/DBAccessProj/obj/*
 /.vs/SQL_injection_practice/v16/TestStore/0/000.testlog
 /.vs/SQL_injection_practice/v16/TestStore/0/testlog.manifest
 .vs/slnx.sqlite
+Code/DBAccess/DBAccess/DBAccessProj/obj/Debug/DBAccessProj.exe
+*.exe
+*.pdb
