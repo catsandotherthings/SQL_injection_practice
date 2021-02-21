@@ -15,8 +15,8 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE TABLE [dbo].[People](
-	[Name] [text] NOT NULL,
-	[SSN] [text] NULL
+	[Name] [varchar(max)] NOT NULL,
+	[SSN] [varchar(max)] NULL
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
 
